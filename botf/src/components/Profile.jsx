@@ -19,7 +19,7 @@ const Profile = () => {
   const [lastName, setLastName] = useState("");
   const userId = localStorage.getItem("userId");
   const [showUpdateForm, setShowUpdateForm] = useState(false); // Toggle form visibility
-  const API_BASE_URL = "https://nothing-server.vercel.app/api";
+  const API_BASE_URL = "https://new-server-one-alpha.vercel.app/api";
 
   const toggleUpdateForm = () => {
     setShowUpdateForm((prev) => !prev);
@@ -106,7 +106,7 @@ const Profile = () => {
     e.preventDefault();
     if (email) {
       try {
-        await axios.put("https://nothing-server.vercel.app/api/user/updateuser", {
+        await axios.put("https://new-server-one-alpha.vercel.app/api/user/updateuser", {
           email,
           teleNumber,
         });

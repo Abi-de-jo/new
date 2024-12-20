@@ -76,7 +76,7 @@ const SecondComponent = ({ onSave }) => {
       console.log(secondFormData.video,"3333333333333333333333333333333333333333")
       if(email){
         const res = await axios.post(
-          "https://nothing-server.vercel.app/api/residency/create",
+          "https://new-server-one-alpha.vercel.app/api/residency/create",
           {
             teleNumber,
              secondFormData,
@@ -88,7 +88,7 @@ const SecondComponent = ({ onSave }) => {
       } 
       else{
         const res = await axios.post(
-          "https://nothing-server.vercel.app/api/residency/create",
+          "https://new-server-one-alpha.vercel.app/api/residency/create",
           {
             teleNumber,
              secondFormData,
