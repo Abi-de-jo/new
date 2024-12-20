@@ -108,7 +108,7 @@ const Profile = () => {
       try {
         await axios.put("https://new-server-one-alpha.vercel.app/api/user/updateuser", {
           email,
-          userId,
+          teleNumber,
         });
         localStorage.setItem("teleEmail", email);
         alert("Logged in successfully");
